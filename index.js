@@ -89,4 +89,22 @@ for (const value of arr) {
 
 console.log( 'The sum of the numbers is:'+ sum); 
 
+
+function calculateSumOfNumbers(array) {
+    let sum = 0;
+  
+    for (let i = 0; i < array.length; i++) {
+      if (typeof array[i] === 'number') {
+        sum += array[i];
+      }
+    }
+  
+    return sum;
+  }
+  
+  // Example usage
+  const mixedArray = [2, 3, 0, 5, 7, 8, true, false];
+  const sumOfNumbers = calculateSumOfNumbers(mixedArray);
+  console.log('Sum of numbers:', sumOfNumbers);
+  
   
